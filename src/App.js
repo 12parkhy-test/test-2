@@ -56,13 +56,13 @@ class App extends React.Component {
               <Link to='/test-2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>Home</Link> | <Link to='/test-2/ex1' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 1</Link> | <Link to='/test-2/ex2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 2</Link>
             </div>
           </nav>
-          <Route exact path='/' render={props => (
+          <Route exact path='/test-2' render={props => (
             <Home state={this.state} />
           )} />
-          <Route path='/ex1' render={props => (
+          <Route path='/test-2/ex1' render={props => (
             <Ex1 state={this.state} />
           )} />
-          <Route path='/ex2' render={props => (
+          <Route path='/test-2/ex2' render={props => (
             <Ex2 state={this.state} />
           )} />
           <main>
