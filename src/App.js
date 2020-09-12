@@ -53,7 +53,7 @@ class App extends React.Component {
               Test
             </div>
             <div style={{ textAlign: 'center' }}>
-              <Link to='/' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>Home</Link> | <Link to='/ex1' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 1</Link> | <Link to='/ex2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 2</Link>
+              <Link to='/test-2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>Home</Link> | <Link to='/test-2/ex1' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 1</Link> | <Link to='/test-2/ex2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 2</Link>
             </div>
           </nav>
           <Route exact path='/' render={props => (
