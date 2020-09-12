@@ -52,19 +52,8 @@ class App extends React.Component {
             <div style={{ fontWeight: 'bold', fontSize: '1.5rem', textAlign: 'center' }}>
               Test
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <Link to='/test-2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>Home</Link> | <Link to='/test-2/ex1' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 1</Link> | <Link to='/test-2/ex2' style={{ color: this.state.darkMode ? '#dff0e9' : '#347deb' }}>EX 2</Link>
-            </div>
-          </nav>
-          <Route exact path='/test-2' render={props => (
+          </nav>    
             <Home state={this.state} />
-          )} />
-          <Route path='/test-2/ex1' render={props => (
-            <Ex1 state={this.state} />
-          )} />
-          <Route path='/test-2/ex2' render={props => (
-            <Ex2 state={this.state} />
-          )} />
           <main>
             <div style={{ textAlign: "center" }}>
               You Are Currently On {this.state.darkMode ? '"Dark Mode"' : '"Normal Mode"'}
